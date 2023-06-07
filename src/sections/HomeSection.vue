@@ -10,13 +10,15 @@
     </p>
     <div class="mx-auto space-y-4 p-4 pb-10 border rounded-md">
       <div class="w-full overflow-hidden rounded-md">
-        <img
-          class="object-cover"
-          src="@/assets/images/image.png"
-          alt="profile"
-        />
+        <lottie-player
+          autoplay
+          loop
+          mode="normal"
+          src="https://assets4.lottiefiles.com/packages/lf20_l9d3f6vk.json"
+        >
+        </lottie-player>
       </div>
-      <p class="text-xs">
+      <p class="text-xs text-center">
         <i
           >"My code doesn't always work, but when it does, I don't know why." -
           Anonymous</i

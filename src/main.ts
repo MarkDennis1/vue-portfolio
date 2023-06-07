@@ -1,4 +1,6 @@
 import './assets/main.css'
+import "@lottiefiles/lottie-player"
+
 
 import { createApp } from 'vue'
 import App from './App.vue'
