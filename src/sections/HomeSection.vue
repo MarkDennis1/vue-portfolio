@@ -4,19 +4,14 @@
       <h1 class="text-2xl font-semibold">Mark Dennis Sanchez</h1>
       <p class="font-bold text-gray-600">Software Developer</p>
     </div>
-    <p class="text-md">
+    <p class="text-md text-justify">
       Graduating student in Bachelor of Science in Information Technology.
       Aspiring Full Stack Developer.
     </p>
-    <div class="mx-auto space-y-4 p-4 pb-10 border rounded-md">
+    <div class="mx-auto space-y-4 p-4 pb-10 border-2 rounded-md">
       <div class="w-full overflow-hidden rounded-md">
-        <lottie-player
-          autoplay
-          loop
-          mode="normal"
-          src="https://assets4.lottiefiles.com/packages/lf20_l9d3f6vk.json"
-        >
-        </lottie-player>
+        <img src="@/assets/images/image01.png" alt="photo" />
+        <!-- https://assets4.lottiefiles.com/packages/lf20_l9d3f6vk.json -->
       </div>
       <p class="text-xs text-center">
         <i

@@ -1,7 +1,7 @@
 <template>
   <section :id="Routes.ABOUT.id" class="flex flex-col gap-4">
     <h1 class="text-2xl font-semibold">About Me</h1>
-    <p>
+    <p class="text-justify">
       I am an aspiring full-stack developer who is passionate about utilizing
       Laravel, Node.js, Vue.js, and React to build intuitive and efficient web
       applications. With a strong foundation in both frontend and backend
@@ -20,7 +20,7 @@
             </p>
           </div>
           <ul class="pl-4 space-y-2">
-            <li v-for="encounter in exp.encounters" class="list-disc text-sm">
+            <li v-for="encounter in exp.encounters" class="list-disc text-sm text-justify">
               {{ encounter }}.
             </li>
           </ul>
