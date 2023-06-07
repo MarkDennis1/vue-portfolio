@@ -2,7 +2,7 @@
   <header>
     <MobileNav :screen-width="screenWidth" />
   </header>
-  <main class="px-4 pt-10">
+  <main class="px-4 pt-10 space-y-10">
     <HomeSection />
     <AboutSection />
     <SkillsSection />

@@ -2,11 +2,11 @@
   <section :id="Routes.HOME.id" class="flex flex-col gap-4">
     <div>
       <h1 class="text-2xl font-semibold">Mark Dennis Sanchez</h1>
-      <p class="font-bold text-gray-600">Web Developer</p>
+      <p class="font-bold text-gray-600">Software Developer</p>
     </div>
     <p class="text-md">
       Graduating student in Bachelor of Science in Information Technology.
-      Aspiring to become a Full Stack Developer.
+      Aspiring Full Stack Developer.
     </p>
     <div class="mx-auto space-y-4 p-4 pb-10 border rounded-md">
       <div class="w-full overflow-hidden rounded-md">

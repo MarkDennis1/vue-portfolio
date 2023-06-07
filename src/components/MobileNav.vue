@@ -66,11 +66,11 @@ window.addEventListener("scroll", () => {
   const navLinks: NodeListOf<HTMLAnchorElement> =
     document.querySelectorAll(".nav-link");
   navLinks.forEach((li) => {
+    li.classList.remove("text-gray-900");
     li.classList.remove("bg-gray-200");
-    li.classList.remove("text-black");
     if (li.href.includes(current)) {
+      li.classList.add("text-gray-900");
       li.classList.add("bg-gray-200");
-      li.classList.add("text-black");
     }
   });
 });
