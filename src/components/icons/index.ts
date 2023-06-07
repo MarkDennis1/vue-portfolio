@@ -5,3 +5,7 @@ export { default as ProjectsIcon } from "./ProjectsIcon.vue";
 export { default as ContactIcon } from "./ContactIcon.vue";
 export { default as ChevronUpIcon } from "./ChevronUpIcon.vue";
 export { default as ChevronDownIcon } from "./ChevronDownIcon.vue";
+export { default as FacebookIcon } from "./FacebookIcon.vue";
+export { default as InstagramIcon } from "./InstagramIcon.vue";
+export { default as LinkedInIcon } from "./LinkedInIcon.vue";
+export { default as GithubIcon } from "./GithubIcon.vue";
