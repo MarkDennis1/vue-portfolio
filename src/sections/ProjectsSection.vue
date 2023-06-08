@@ -24,6 +24,7 @@
         <h2 class="text-lg font-semibold">{{ proj.title }}</h2>
         <div class="flex justify-between">
           <a
+            target="_blank"
             :href="!proj.links.repo ? 'javascript:void(0)' : proj.links.repo"
             class="text-lg flex items-center gap-2"
             :class="
@@ -35,6 +36,7 @@
             code <new-tab-icon class="w-4 h-4 flex-shrink-0" />
           </a>
           <a
+            target="_blank"
             :href="!proj.links.live ? 'javascript:void(0)' : proj.links.live"
             class="text-lg flex items-center gap-2"
             :class="
