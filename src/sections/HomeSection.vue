@@ -1,14 +1,17 @@
 <template>
-  <section :id="Routes.HOME.id" class="flex flex-col gap-4">
+  <section :id="Routes.HOME.id" class="flex flex-col gap-4 px-4">
     <div>
       <h1 class="text-2xl font-semibold">Mark Dennis Sanchez</h1>
-      <p class="font-bold text-gray-600">Software Developer</p>
+      <p class="text-300 font-bold">Software Developer</p>
     </div>
     <p class="text-md text-justify">
-      Graduating student in Bachelor of Science in Information Technology.
-      Aspiring Full Stack Developer.
+      I am a graduating student pursuing a Bachelor of Science degree in
+      Information Technology, with a strong passion for becoming a Full Stack
+      Developer.
     </p>
-    <div class="mx-auto space-y-4 p-4 pb-10 border-2 rounded-md">
+    <div
+      class="mx-auto space-y-4 p-4 pb-10 rounded-md border-2 border-cardPrimary"
+    >
       <div class="w-full overflow-hidden rounded-md">
         <img src="@/assets/images/image01.png" alt="photo" />
         <!-- https://assets4.lottiefiles.com/packages/lf20_l9d3f6vk.json -->
@@ -20,28 +23,32 @@
         >
       </p>
       <div class="flex justify-around">
+        <a :href="Routes.CONTACT.href">
+          <PrimaryButton> Contact </PrimaryButton>
+        </a>
         <a
           target="_blank"
           href="https://drive.google.com/file/d/19XGdxn6VmLX1Qk7pcmyB0FZJLMZRjC7u/view"
         >
           <SecondaryButton> Resume </SecondaryButton>
         </a>
-        <a :href="Routes.CONTACT.href">
-          <PrimaryButton> Contact </PrimaryButton>
-        </a>
       </div>
     </div>
     <div class="relative h-10">
       <div
-        class="absolute left-0 right-0 -top-10 mx-auto flex justify-center gap-4 text-gray-500"
+        class="absolute left-0 right-0 -top-10 mx-auto flex justify-center gap-4"
       >
         <a
           v-for="(social, index) in socials"
           :key="index"
           target="_blank"
           :href="social.href"
-          class="h-10 w-10 rounded-full overflow-hidden bg-white hover:text-orange-500"
+          class="relative h-10 w-10"
         >
+          <component
+            :is="social.icon"
+            class="absolute h-10 flex-shrink-0 duration-300 hover:text-lightAccent hover:-left-0.5 hover:-top-0.5 rounded-full"
+          />
           <component :is="social.icon" class="h-10 flex-shrink-0" />
         </a>
       </div>

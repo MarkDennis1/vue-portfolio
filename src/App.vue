@@ -2,12 +2,10 @@
   <header>
     <MobileNav :screen-width="screenWidth" />
   </header>
-  <main class="px-4 pt-10 space-y-10">
-    <HomeSection />
-    <AboutSection />
-    <SkillsSection />
-    <ProjectsSection />
-    <ContactSection />
+  <main class="space-y-5">
+    <template v-for="(section, index) in sections">
+      <component :is="section" :class="index % 2 == 0 ? 'bg-white' : 'bg-cardSecondary py-8'" />
+    </template>
   </main>
 </template>
 
@@ -20,6 +18,14 @@ import SkillsSection from "@/sections/SkillsSection.vue";
 import ProjectsSection from "@/sections/ProjectsSection.vue";
 import ContactSection from "@/sections/ContactSection.vue";
 const screenWidth = ref(window.innerWidth);
+
+const sections = [
+  HomeSection,
+  AboutSection,
+  SkillsSection,
+  ProjectsSection,
+  ContactSection,
+];
 
 window.addEventListener("resize", () => {
   screenWidth.value = window.innerWidth;

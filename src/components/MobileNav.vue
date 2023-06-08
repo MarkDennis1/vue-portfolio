@@ -6,22 +6,22 @@
       isExpand ? '-bottom-0' : screenWidth < 768 ? '-bottom-14' : '-bottom-0' //hide 5th navlink on small screen
     "
   >
-    <div v-if="screenWidth < 768" class="relative h-8">
+    <div v-if="screenWidth < 768" class="relative h-10">
       <button
         @click="toggleExpand"
-        class="absolute left-0 right-0 top-1/2 m-auto flex justify-center items-center ring-1 ring-orange-500 h-8 w-8 rounded-full bg-white hover:bg-gray-200"
+        class="absolute left-0 right-0 top-1/2 m-auto flex justify-center items-center ring-1 ring-orange-500 h-10 w-10 rounded-full bg-white hover:bg-gray-200"
       >
         <ChevronDownIcon v-if="isExpand" />
         <ChevronUpIcon v-else />
       </button>
     </div>
     <ul
-      class="grid grid-cols-4 md:grid-cols-5 text-xs bg-gray-100 p-2 ring-1 ring-orange-500"
+      class="grid grid-cols-4 md:grid-cols-5 text-xs bg-white p-2 ring-1 ring-orange-500"
     >
       <li v-for="route in Routes.ROUTES_LIST">
         <a
           @click="isExpand = false"
-          class="nav-link flex flex-col py-2 rounded-md justify-center items-center text-gray-600 hover:text-black hover:bg-gray-200"
+          class="nav-link flex flex-col py-2 rounded-md justify-center items-center text-300 hover:text-400 hover:bg-cardPrimary"
           :href="route.href"
         >
           <component :is="route.icon" />
@@ -66,11 +66,13 @@ window.addEventListener("scroll", () => {
   const navLinks: NodeListOf<HTMLAnchorElement> =
     document.querySelectorAll(".nav-link");
   navLinks.forEach((li) => {
-    li.classList.remove("text-gray-900");
-    li.classList.remove("bg-gray-200");
+    li.classList.add("text-300");
+    li.classList.remove("text-400");
+    li.classList.remove("bg-cardPrimary");
     if (li.href.includes(current)) {
-      li.classList.add("text-gray-900");
-      li.classList.add("bg-gray-200");
+      li.classList.remove("text-300");
+      li.classList.add("text-400");
+      li.classList.add("bg-cardPrimary");
     }
   });
 });

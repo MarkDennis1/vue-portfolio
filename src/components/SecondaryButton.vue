@@ -7,9 +7,24 @@
       <slot />
     </button>
     <button
-      class="absolute top-0 left-0 px-4 py-2 hover:-top-1 hover:-left-1.5 transition-all rounded-md bg-white ring-1 ring-orange-500 text-orange-500"
+      :disabled="disable"
+      class="absolute top-0 left-0 px-4 py-2 transition-all rounded-md bg-white ring-1"
+      :class="
+        disable
+          ? 'text-orange-200 ring-orange-200'
+          : 'hover:-top-1 hover:-left-1.5 text-orange-500 ring-orange-500'
+      "
     >
       <slot />
     </button>
   </div>
 </template>
+
+<script setup lang="ts">
+defineProps({
+  disable: {
+    type: Boolean,
+    default: false,
+  },
+});
+</script>

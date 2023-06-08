@@ -9,3 +9,5 @@ export { default as FacebookIcon } from "./FacebookIcon.vue";
 export { default as InstagramIcon } from "./InstagramIcon.vue";
 export { default as LinkedInIcon } from "./LinkedInIcon.vue";
 export { default as GithubIcon } from "./GithubIcon.vue";
+export { default as XMarkIcon } from "./XMarkIcon.vue";
+export { default as NewTabIcon } from "./NewTabIcon.vue";
