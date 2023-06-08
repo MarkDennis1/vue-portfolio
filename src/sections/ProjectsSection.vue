@@ -3,7 +3,7 @@
     <h1 class="text-2xl font-semibold">Projects</h1>
     <div class="flex flex-col gap-4">
       <div
-        class="p-4 space-y-4 rounded-md bg-cardPrimary"
+        class="p-4 space-y-4 rounded-md shadow-md bg-cardPrimary"
         v-for="proj in projects"
         :key="proj.title"
       >
@@ -81,17 +81,24 @@ import { EffectCube, Pagination } from "swiper";
 import { Routes } from "@/helpers";
 import { NewTabIcon } from "@/components/icons";
 import { XMarkIcon } from "@/components/icons";
-import { ref, type Ref } from "vue";
-
+import { ref } from "vue";
+import {
+  project01,
+  project01_1,
+  project01_2,
+  project02,
+  project03,
+  project03_1,
+  project04,
+  project04_1,
+  project04_2,
+  project04_3,
+} from "@/assets/images";
 const modules = [EffectCube, Pagination];
 
 const projects = [
   {
-    thumbnails: [
-      "src/assets/images/project01.png",
-      "src/assets/images/project01.1.png",
-      "src/assets/images/project01.2.png",
-    ],
+    thumbnails: [project01, project01_1, project01_2],
     title: "D'Creamy Milktea House POS (Back-End)",
     description: `A point of sale (POS) system created using VB.net with MySQL for database. This was created for the store "D'Creamy Milktea House" as a capstone project.`,
     technologies: ["Visual Basic", ".NET", "MySQL"],
@@ -102,7 +109,7 @@ const projects = [
     expand: ref(false),
   },
   {
-    thumbnails: ["src/assets/images/project02.png"],
+    thumbnails: [project02],
     title: "The Cat House (Full-Stack)",
     description: "A scheduling system catering specifically to cat adoptions",
     technologies: ["Laravel", "Vue", "Inertia", "TailwindCSS", "MySQL"],
@@ -113,10 +120,7 @@ const projects = [
     expand: ref(false),
   },
   {
-    thumbnails: [
-      "src/assets/images/project03.png",
-      "src/assets/images/project03.1.png",
-    ],
+    thumbnails: [project03, project03_1],
     title: "Netflix UI Clone (Front-End)",
     description:
       "I built a Netflix UI clone to practice React, I used TMDB API for fetching tv-shows and movies.",
@@ -128,12 +132,7 @@ const projects = [
     expand: ref(false),
   },
   {
-    thumbnails: [
-      "src/assets/images/project04.png",
-      "src/assets/images/project04.1.png",
-      "src/assets/images/project04.2.png",
-      "src/assets/images/project04.3.png",
-    ],
+    thumbnails: [project04, project04_1, project04_2, project04_3],
     title: "Student Management CRUD (Back-End)",
     description:
       "Project in IT Elec 2 - Web System Technologies 2 - a simple crud application for managing student list.",
