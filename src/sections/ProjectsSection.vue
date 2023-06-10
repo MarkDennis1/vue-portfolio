@@ -2,7 +2,7 @@
   <section :id="Routes.PROJECTS.id" class="">
     <div class="flex flex-col gap-4 px-4 max-w-4xl mx-auto">
       <h1 class="text-2xl font-semibold text-heavyAccent">Projects</h1>
-      <div class="flex flex-col gap-4 md:grid md:grid-cols-2 lg:grid-cols-3">
+      <div class="flex flex-col gap-4 md:grid md:grid-cols-2 lg:grid-cols-2">
         <div
           class="p-4 space-y-4 rounded-md shadow-md bg-cardPrimary"
           v-for="proj in projects"

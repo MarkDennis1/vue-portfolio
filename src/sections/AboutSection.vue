@@ -3,7 +3,7 @@
     <div class="flex flex-col gap-4 px-4 max-w-4xl mx-auto">
       <div class="md:grid grid-cols-2">
         <div class="flex justify-center">
-          <img class="hidden md:block h-48 w-48 rounded-full shadow-md aspect-square object-cover" src="@/assets/images/avatar.jpeg" alt="mark-dennis-profile" />
+          <img class="hidden md:block h-48 w-48 rounded-full shadow-md aspect-square object-cover" src="@/assets/images/image01.png" alt="mark-dennis-profile" />
           <!-- https://assets4.lottiefiles.com/packages/lf20_l9d3f6vk.json -->
         </div>
         <div>
@@ -104,17 +104,6 @@ const experiences = [
       "Used mailtrap for email testing.",
       "Used bitbucket as our web-based version control repository hosting service.",
       "Learned some of the advance concepts of Laravel.",
-    ],
-  },
-  {
-    title: "Freelance",
-    at: "Self employed",
-    during: "Less than a year",
-    encounters: [
-      "Designed an Entity Relationship Diagram (ERD) using MySQL Workbench and Draw.io",
-      "Provides solutions and features on existing systems.",
-      "Collaborated with students on various small projects.",
-      "Assist on designing UI using figma.",
     ],
   },
 ];
