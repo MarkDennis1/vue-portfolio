@@ -3,7 +3,6 @@ import {
   AboutIcon,
   SkillsIcon,
   ProjectsIcon,
-  ContactIcon,
 } from "@/components/icons";
 
 export class Routes {
@@ -12,7 +11,6 @@ export class Routes {
     { id: "about", href: "#about", name: "About", icon: AboutIcon },
     { id: "skills", href: "#skills", name: "Skills", icon: SkillsIcon },
     { id: "projects", href: "#projects", name: "Projects", icon: ProjectsIcon },
-    { id: "contact", href: "#contact", name: "Contact", icon: ContactIcon },
   ];
 
   static HOME = {
@@ -38,11 +36,5 @@ export class Routes {
     href: "#projects",
     name: "Projects",
     icon: ProjectsIcon,
-  };
-  static CONTACT = {
-    id: "contact",
-    href: "#contact",
-    name: "Contact",
-    icon: ContactIcon,
   };
 }

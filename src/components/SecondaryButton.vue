@@ -2,7 +2,7 @@
   <div class="relative">
     <button
       disabled
-      class="px-4 py-2 ring-1 ring-inset ring-orange-500 rounded-md"
+      class="px-4 py-2 ring-1 ring-inset ring-heavyAccent rounded-md"
     >
       <slot />
     </button>
@@ -12,7 +12,7 @@
       :class="
         disable
           ? 'text-orange-200 ring-orange-200'
-          : 'hover:-top-1 hover:-left-1.5 text-orange-500 ring-orange-500'
+          : 'hover:-top-1 hover:-left-1.5 text-heavyAccent ring-heavyAccent'
       "
     >
       <slot />
