@@ -65,8 +65,8 @@
       <div
         class="mx-auto space-y-4 p-4 pb-10 rounded-md border-2 border-cardPrimary lg:hidden"
       >
-        <div class="w-full overflow-hidden rounded-md">
-          <img src="@/assets/images/heroimage.jpg" alt="mark-dennis-profile" />
+        <div class="w-full overflow-hidden rounded-md md:h-[50dvh] md:aspect-square">
+          <img src="@/assets/images/image01.png" alt="mark-dennis-profile" />
           <!-- https://assets4.lottiefiles.com/packages/lf20_l9d3f6vk.json -->
         </div>
         <p class="text-xs text-center">
@@ -76,7 +76,7 @@
           >
           <p><i> - Kathy Sierra</i></p>
         </p>
-        <div class="flex justify-around text-sm">
+        <div class="flex justify-around gap-4 md:justify-center text-sm">
           <a :href="Routes.ABOUT.href">
             <PrimaryButton> Learn more </PrimaryButton>
           </a>
