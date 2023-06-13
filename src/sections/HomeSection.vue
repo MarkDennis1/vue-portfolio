@@ -49,8 +49,8 @@
       </div>
       <!-- hero right -->
       <div class="hidden lg:flex flex-col gap-4 w-full items-center">
-        <div class="h-80 w-80 aspect-square overflow-hidden">
-          <img src="@/assets/images/heroimage.jpg" alt="mark-dennis-profile" />
+        <div class="h-48 w-48 rounded-full aspect-square shadow-md overflow-hidden">
+          <img src="@/assets/images/image01.png" alt="mark-dennis-profile" />
           <!-- https://assets4.lottiefiles.com/packages/lf20_l9d3f6vk.json -->
         </div>
         <p class="text-xs text-center w-1/2">
