@@ -3,7 +3,11 @@
     <div class="flex flex-col gap-4 px-4 max-w-4xl mx-auto">
       <div class="md:grid grid-cols-2">
         <div class="flex justify-center">
-          <img class="hidden md:block h-48 w-48 rounded-full shadow-md aspect-square object-cover" src="@/assets/images/heroimage.jpg" alt="mark-dennis-profile" />
+          <img
+            class="hidden md:block h-48 w-48 rounded-full shadow-md aspect-square object-cover"
+            src="@/assets/images/heroimage.jpg"
+            alt="mark-dennis-profile"
+          />
           <!-- https://assets4.lottiefiles.com/packages/lf20_l9d3f6vk.json -->
         </div>
         <div>
