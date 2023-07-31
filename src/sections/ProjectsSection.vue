@@ -4,7 +4,7 @@
       <h1 class="text-2xl font-semibold text-heavyAccent">Projects</h1>
       <div class="flex flex-col gap-4 md:grid md:grid-cols-2 lg:grid-cols-2">
         <div
-          class="p-4 space-y-4 rounded-md shadow-md bg-cardPrimary"
+          class="p-4 space-y-4 rounded-md shadow-md bg-white"
           v-for="proj in projects"
           :key="proj.title"
         >
@@ -72,12 +72,6 @@
                 demo <new-tab-icon />
               </a>
             </div>
-            <button @click="proj.expand.value = !proj.expand.value">
-              <x-mark-icon
-                class="transition-all text-heavyAccent"
-                :class="!proj.expand.value ? 'rotate-45' : 'rotate-0'"
-              />
-            </button>
           </div>
           <!-- Small screen buttons -->
           <div class="flex justify-between md:hidden">
@@ -105,19 +99,11 @@
             >
               demo <new-tab-icon />
             </a>
-            <button @click="proj.expand.value = !proj.expand.value">
-              <x-mark-icon
-                class="transition-all text-heavyAccent"
-                :class="!proj.expand.value ? 'rotate-45' : 'rotate-0'"
-              />
-            </button>
           </div>
-          <p v-if="proj.expand.value" class="text-sm text-justify">
+          <p class="text-sm text-justify">
             {{ proj.description }}
           </p>
-          <div
-            class="flex flex-wrap gap-x-2 gap-y-1 text-xs leading-none"
-          >
+          <div class="flex flex-wrap gap-x-2 gap-y-1 text-xs leading-none">
             <div
               class="px-2 py-1 rounded-full lowercase bg-100 hover:bg-heavyAccent hover:text-white transition-all cursor-pointer font-light"
               v-for="(technology, index) in proj.technologies"
@@ -156,10 +142,32 @@ import {
   project04_1,
   project04_2,
   project04_3,
+  tiktalk_desktop_login,
+  tiktalk_mobile_mockups,
 } from "@/assets/images";
 const modules = [EffectCreative, Pagination, Navigation];
 
 const projects = [
+  {
+    thumbnails: [tiktalk_desktop_login, tiktalk_mobile_mockups],
+    title: "Tiktalk - Chat App (Full-Stack)",
+    description: `Simple MERN chat application with authentication and real-time chat feature.`,
+    technologies: [
+      "Web",
+      "TailwindCSS",
+      "Typescript",
+      "Javascript",
+      "MongoDB",
+      "Express",
+      "React",
+      "NodeJS",
+    ],
+    links: {
+      repo: "https://github.com/MarkDennis1/tiktalk",
+      live: "https://tiktalk-mern.netlify.app",
+    },
+    expand: ref(false),
+  },
   {
     thumbnails: [project01, project01_1, project01_2],
     title: "D'Creamy Milktea House POS (Back-End)",

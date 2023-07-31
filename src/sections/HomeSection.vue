@@ -14,8 +14,8 @@
           </h1>
         </div>
         <p class="text-md text-justify">
-          I am a graduating student pursuing a Bachelor of Science degree in
-          Information Technology, with a strong passion for becoming a Full
+          I am a fresh graduate student with a Bachelor of Science degree in
+          Information Technology and a strong passion for becoming a Full
           Stack Developer.
         </p>
           <!-- buttons  -->

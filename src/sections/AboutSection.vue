@@ -29,7 +29,7 @@
           <ul class="flex flex-col gap-4">
             <div
               v-for="exp in experiences"
-              class="flex flex-col p-4 rounded-md bg-cardPrimary shadow-md"
+              class="flex flex-col rounded-md p-4"
             >
               <div>
                 <div>{{ exp.title }}</div>
@@ -61,7 +61,7 @@
           <ul class="flex flex-col gap-4">
             <div
               v-for="ed in education"
-              class="p-4 rounded-md bg-cardPrimary shadow-md"
+              class="p-4 rounded-md"
             >
               <div>
                 <p>
