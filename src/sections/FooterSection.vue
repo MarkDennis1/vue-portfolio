@@ -1,12 +1,9 @@
 <template>
-  <section id="footer" class="px-4 h-24 pb-40 md:pb-0 text-xs">
-    <div
-      class="max-w-4xl mx-auto flex flex-col gap-4 items-center md:flex-row md:justify-between"
-    >
-      <p>
-        © 2023 <a class="hover:underline" href="/">Mark Dennis</a>. All rights
-        reserved.
-      </p>
+  <section
+    id="footer"
+    class="px-4 h-24 pb-40 md:pb-0 min-h-[30vh] grid place-items-center"
+  >
+    <div class="max-w-4xl mx-auto flex flex-col gap-4 text-center">
       <div class="flex gap-2 divide-x-2">
         <a
           target="_blank"
@@ -28,6 +25,10 @@
           on Freepik
         </p>
       </div>
+      <p>
+        © 2023 <a class="hover:underline" href="/">Mark Dennis</a>. All rights
+        reserved.
+      </p>
     </div>
   </section>
 </template>

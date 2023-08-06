@@ -1,7 +1,22 @@
 <template>
   <section :id="Routes.PROJECTS.id" class="">
-    <div class="flex flex-col gap-4 px-4 max-w-4xl mx-auto">
-      <h1 class="text-2xl font-semibold text-heavyAccent">Projects</h1>
+    <div class="flex flex-col gap-4 px-4 max-w-4xl mx-auto min-h-[80vh]">
+      <div class="flex justify-between items-center">
+        <div class="w-full">
+          <h1 class="text-2xl font-semibold text-heavyAccent">Projects</h1>
+          <div class="flex justify-between">
+            <p>
+              Where Imagination Meets Innovation: Showcasing My Finest Creations
+            </p>
+            <a
+              target="_blank"
+              class="hover:underline hidden md:inline-block"
+              href="https://github.com/MarkDennis1"
+              >See more...</a
+            >
+          </div>
+        </div>
+      </div>
       <div class="flex flex-col gap-4 md:grid md:grid-cols-2 lg:grid-cols-2">
         <div
           class="p-4 space-y-4 rounded-md shadow-md bg-white"
@@ -40,9 +55,9 @@
           </swiper>
           <h2 class="text-lg font-semibold truncate">{{ proj.title }}</h2>
 
-          <!-- medium screen buttons -->
-          <div class="hidden md:flex justify-between">
-            <div class="flex gap-4">
+          <!-- action button -->
+          <div class="justify-between">
+            <div class="flex gap-8">
               <a
                 target="_blank"
                 :href="
@@ -73,33 +88,6 @@
               </a>
             </div>
           </div>
-          <!-- Small screen buttons -->
-          <div class="flex justify-between md:hidden">
-            <a
-              target="_blank"
-              :href="!proj.links.repo ? 'javascript:void(0)' : proj.links.repo"
-              class="flex items-center gap-2"
-              :class="
-                !proj.links.repo
-                  ? 'text-200 pointer-events-none'
-                  : 'hover:underline'
-              "
-            >
-              code <new-tab-icon />
-            </a>
-            <a
-              target="_blank"
-              :href="!proj.links.live ? 'javascript:void(0)' : proj.links.live"
-              class="flex items-center gap-2"
-              :class="
-                !proj.links.live
-                  ? 'text-200 pointer-events-none'
-                  : 'hover:underline'
-              "
-            >
-              demo <new-tab-icon />
-            </a>
-          </div>
           <p class="text-sm text-justify">
             {{ proj.description }}
           </p>
@@ -129,7 +117,6 @@ import { EffectCreative, Pagination, Navigation } from "swiper";
 
 import { Routes } from "@/helpers";
 import { NewTabIcon } from "@/components/icons";
-import { XMarkIcon } from "@/components/icons";
 import { ref } from "vue";
 import {
   project01,
@@ -229,7 +216,7 @@ const projects = [
       "OOP",
     ],
     links: {
-      repo: "https://github.com/MarkDennis1/PHP-CRUD_Project",
+      repo: "https://github.com/MarkDennis1/php_crud",
       live: "",
     },
     expand: ref(false),

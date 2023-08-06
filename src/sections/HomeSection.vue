@@ -1,7 +1,7 @@
 <template>
-  <section :id="Routes.HOME.id">
+  <section :id="Routes.HOME.id" class="min-h-[80vh] grid place-items-center">
     <div
-      class="flex flex-col gap-4 px-4 pt-16 max-w-4xl mx-auto lg:flex-row lg:items-center lg:h-[80vh]"
+      class=" flex flex-col gap-4 px-4 pt-16 max-w-4xl mx-auto lg:flex-row lg:items-center"
     >
       <!-- hero left -->
       <div class="flex flex-col gap-4 w-full">

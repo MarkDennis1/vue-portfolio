@@ -1,5 +1,5 @@
 <template>
-  <section :id="Routes.ABOUT.id" class="">
+  <section :id="Routes.ABOUT.id" class="min-h-[80vh] grid place-items-center">
     <div class="flex flex-col gap-4 px-4 max-w-4xl mx-auto">
       <div class="md:grid grid-cols-2">
         <div class="flex justify-center">
