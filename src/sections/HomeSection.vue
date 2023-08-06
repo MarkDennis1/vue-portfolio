@@ -46,6 +46,17 @@
               <component :is="social.icon" class="h-10 flex-shrink-0" />
             </a>
           </div>
+          <!-- contacts -->
+          <div class="flex flex-col">
+            <p>
+              +63 939 727 1117
+            </p>
+            <p>
+              <a href="mailto:markdennissanchez1@gmail.com" class="hover:underline">
+                markdennissanchez1@gmail.com
+              </a>
+            </p>
+          </div>
       </div>
       <!-- hero right -->
       <div class="hidden lg:flex flex-col gap-4 w-full items-center">
