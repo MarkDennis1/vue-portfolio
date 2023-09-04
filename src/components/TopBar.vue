@@ -17,7 +17,7 @@
     </div>
     <a
       target="_blank"
-      href="https://drive.google.com/file/d/1fFkcbhpNqdEYwZ24-tXbyr_qYh1_Ygux/view?usp=sharing"
+      href="https://drive.google.com/file/d/1UM4R5vlBfTeevjCFJTARaO4bnmE8tZ3-/view"
     >
       <PrimaryButton class="text-xs">Resume</PrimaryButton>
     </a>
